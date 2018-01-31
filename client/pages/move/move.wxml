@@ -1,0 +1,6 @@
+<!--pages/move/move.wxml-->
+<view class='backgrounddd' >
+  <view style='height:250rpx'></view>
+  <image src='../../images/flower.png' style='width:30rpx;height:30rpx;' animation="{{animationData}}"></image>
+  <button bindtap='moveTox'>111</button>
+</view>

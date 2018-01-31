@@ -1,0 +1,15 @@
+/* pages/customerpage/customer.wxss */
+.flex-item{
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+.bc_green{
+  background-color: green;
+}
+.bc_red{
+  background-color: red;
+}
+.bc_blue{
+  background-color: blue;
+}

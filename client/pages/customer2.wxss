@@ -1,0 +1,44 @@
+/* pages/customer2.wxss */
+/**index.wxss**/
+.card_wrap {
+  background: #f2f2f6;
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+.card_wrap .card_item {
+  position: absolute;
+  width: 80%;
+}
+
+
+
+.card_wrap .card_item.card1 {
+  top: 62px;
+  left: 25px;
+  /* transform: translateY(62px) translateX(25px);  */
+  z-index: 3
+}
+
+.card_wrap .card_item.card2 {
+  top: 44px;
+  left: 41px;
+  z-index: 2;
+  /* transform: translateY(44px) translateX(41px); */
+}
+
+
+.card_wrap .card_item.card3 {
+  top: 28px;
+  left: 51px;
+  /* transform: translateY(28px) translateX(51px); */
+  z-index: 1;
+}
+
+.card_wrap .card_item image {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border-radius: 6px;
+  box-shadow: 6px 23px 50px 10px #ccc;
+}

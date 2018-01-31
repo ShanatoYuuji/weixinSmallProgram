@@ -1,0 +1,4 @@
+/* pages/move/move.wxss */
+.backgrounddd{
+ background-image: url(../../images/background.png)
+}

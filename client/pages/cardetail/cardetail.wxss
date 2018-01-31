@@ -1,0 +1,92 @@
+/* pages/cardetail/cardetail.wxss */
+.bothmargin{
+  margin-left: 20rpx;
+  margin-right: 30rpx;
+}
+
+.middleview{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fontcar{
+  font-size: 30rpx;
+  color: #353535;
+  margin-top: 30rpx;
+}
+.fontprice{
+  font-size: 34rpx;
+  color: #ff0000;
+  margin-top: 26rpx;
+}
+
+.fontsellpoint{
+  font-size: 22rpx;
+  color: #666666;
+  margin-top:20rpx;
+}
+.quarantine{
+  background: #f7f7f7;
+  height: 20rpx;
+}
+.fonthit{
+  font-size: 24rpx;
+  color: #888888;
+}
+.fontcontent{
+  font-size: 24rpx;
+  color: #666666;
+}
+.middlehit{
+  text-align: center;
+  line-height: 80rpx;
+  height: 80rpx;
+}
+.quarantineline{
+  height: 1rpx;
+  background-color: #dcdcdc;
+}
+.detailpadding{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  justify-content: center; 
+}
+.blockline{
+  display: inline-block;
+  width: 100rpx;
+  height: 1rpx;
+  background-color: #dcdcdc;
+  margin-top: 10rpx;
+}
+.blockspance{
+  display: inline-block;
+  width: 30rpx;
+  height: 1rpx;
+}
+.fontcardetail{
+  display: inline-block;
+  font-size: 30rpx;
+  color: #353535;
+  line-height: 30rpx;
+}
+
+.bottombtn{
+   display: inline-block;
+   width: 371rpx;
+   height: 98rpx;
+   line-height: 98rpx;
+   text-align: center;
+}
+.btn1{
+  border: 1rpx solid #dcdcdc;
+  font-size: 36rpx;
+  color: #666666;
+}
+.btn2{
+  border: 1rpx solid #dcdcdc;
+  font-size: 36rpx;
+  background-color: #3080ee;
+  color: #FFFFFF;
+}

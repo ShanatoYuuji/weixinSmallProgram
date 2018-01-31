@@ -1,0 +1,68 @@
+<!--pages/index/index.wxml-->
+<view wx:if="{{slides&&slides.length>0}}">
+    <swiper autoplay="true" interval="5000" duration="500" style='height:440rpx' >
+       <block wx:for="{{slides}}" wx:key='{{slideId}}'>
+       <swiper-item >
+        <image src="{{item.picture}}" data-id='{{item.slideId}}' mode='aspectFill' class='toppic'/>
+         <view class='toptitle'>
+        {{item.name}}
+         </view>
+       </swiper-item>
+      </block>
+
+    </swiper>
+    
+    <view style='margin-top:10rpx;text-align: center;font-size:22rpx;color:#666666'>点击下方,立刻预约试驾,尽享驾控新体验</view>
+    <view style='margin-top:22rpx;display:flex;justify-content:center;'>
+    <view class='orderfont'>立即预约</view>
+    </view>
+
+    <block wx:if="{{resultex}}">
+     <view style='margin-top:30rpx;background-color:#efeff4;height:88rpx; padding-top: 16rpx; display: flex; flex-wrap: nowrap;'>
+      <view style=' display: inline-block;'>
+      <input placeholder='搜索车型、卖点' class='searchinput' 
+             confirm-type='search'  bindconfirm='onsearch' value="{{inputValue}}">
+      </input>
+      </view>
+      <!-- <button class='searchbtn'>搜索</button>  -->
+    </view> 
+
+    
+    <block wx:for="{{result}}" wx:key="carId">
+    <view>
+       <image src="{{item.picture}}" data-id='{{item.carId}}' mode='aspectFill' class='toppic'/>
+         <view class='bothside'>
+          <view class='cartitle'>{{item.name}}</view>
+          <view wx:if="{{item.sellingPoint}}" class='catdescribute'>{{item.sellingPoint}}</view>
+          <view style='display:flex; justify-content:space-between;margin-top:30rpx;'>
+          <text wx:if='{{item.officialPrice}}'  class='carofficalprice'>
+            官方指导价：{{item.officialPrice}}万起
+          </text>
+          <text wx:else class='carofficalprice'>暂无报价</text>
+          <text wx:if="{{item.price}}" class='carprice'>{{item.price}}万起</text>
+          <text wx:else class='carprice'>暂无报价</text>
+          </view>
+          <view style='text-align:right;margin-bottom:30rpx;' class='cardetail' bindtap='consultdetail' data-id='{{item.carId}}'>查看详情<view style='display:inline-block;width:20rpx'></view>></view>
+         </view>
+    </view>
+    </block>
+     <view class='company-info'>© 微炫客技术支持</view>
+    </block>
+
+     <block wx:else>
+     <view class='ordernone'>
+     <image src='../../images/暂无信息.png' class='search_no'></image>
+     </view>
+     <view style='text-align:center;font-size:30rpx;color:#888888'>暂无门店信息</view>
+     </block>
+
+</view>
+
+<view wx:else>
+   <view class="ordernoneview">
+      <image class="search_view" src="../../images/门店信息.png"></image>
+    </view>
+    <view class="fontsetting">
+      <text>暂无门店信息</text>
+    </view>
+</view>

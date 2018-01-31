@@ -1,0 +1,11 @@
+<!--pages/customer1/customer1.wxml-->
+<text></text>
+<view class="container">
+  <view class="card_wrap">
+    <view bindtouchend="slidethis" animation="{{id === 0 ? animationData : ''}}" class="card_item card{{ id%3 + 1 }} " wx:for="{{ cardInfoList }}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
+  
+      <image src="{{ item.cardUrl }}"></image>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/customer1/customer1.wxml-->
+<text></text>
+<view class="section">
+  <view class="section__title">vertical scroll</view>
+  <scroll-view scroll-x style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" >
+    <view id="green" class="scroll-view-item bc_green">1</view>
+    <view id="red"  class="scroll-view-item bc_red">2</view>
+    <view id="yellow" class="scroll-view-item bc_yellow">3</view>
+    <view id="blue" class="scroll-view-item bc_blue">4</view>
+  </scroll-view>
+
+
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+<view style="background: red; width: 400rpx; height: 100px; display: inline-block" ></view>
+<view style="background: green; width: 400rpx; height: 100px; display: inline-block"></view>
+<view style="background: blue; width: 400rpx; height: 100px; display: inline-block"></view>
+<view style="background: yellow; width:400rpx; height: 100px; display: inline-block"></view>
+</scroll-view>
+ 
+</view>

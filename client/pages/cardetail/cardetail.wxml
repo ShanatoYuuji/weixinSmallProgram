@@ -1,0 +1,64 @@
+<!--pages/cardetail/cardetail.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view>
+  <view>
+  <image  style='width:100%;height:380rpx' mode='aspectFill' src='{{result.picture}}'></image>
+  </view>
+  <view class='bothmargin'>
+    <view class='middleview'>
+      <text class='fontcar'>{{result.name}}</text>
+      <text wx:if='{{result.price&&result.price>0}}' class='fontprice' >{{result.price}}万起</text>
+      <text wx:else class='fontprice'>暂无报价</text>
+    </view>
+    <view wx:if='{{result.sellingPoint}}' class='fontsellpoint'>
+    <text>{{result.sellingPoint}}</text>
+    </view>
+  </view>
+
+  <view class='quarantine' style='margin-top:30rpx'>
+  </view>
+
+  <view class='bothmargin'>
+     <view class='middleview middlehit'>
+      <text class='fonthit'>官方指导价</text>
+      <text class='fontcontent' wx:if='{{result.officialPrice&&result.officialPrice>0}}'>{{result.officialPrice}}万起</text>
+      <text class='fontcontent' wx:else>暂无官方指导价</text>
+     </view>
+    <view class='quarantineline'></view>
+     <view class='middleview middlehit'>
+      <text class='fonthit'>基础车型</text>
+      <text wx:if="{{result.motorcycleType}}" class='fontcontent'>{{result.motorcycleType}}</text>
+      <text wx:else class='fontcontent'>暂无车型</text>
+     </view>
+    <view class='quarantineline'></view>
+     <view class='middleview middlehit'>
+      <text class='fonthit'>品牌</text>
+      <text wx:if="{{result.brand}}" class='fontcontent'>{{result.brand}}</text>
+      <text wx:else class='fontcontent'>暂无品牌</text>
+     </view>
+    <view class='quarantineline'></view>
+        <view class='middleview middlehit'>
+          <text class='fonthit'>国别</text>
+          <text wx:if="{{result.country}}" class='fontcontent'>{{result.country}}</text>
+          <text wx:else class='fontcontent'>暂无国家</text>
+        </view>
+    </view>
+   <view class='quarantine'>
+   </view>
+   <view wx:if="{{result.detail}}" class='bothmargin detailpadding'>
+      <view class='blockline'></view>
+      <view class='blockspance'></view>
+      <view class='fontcardetail'>汽车详情</view>
+      <view class='blockspance'></view>
+      <view class='blockline'></view>
+   </view>
+   <view class='bothmargin'>
+      <!--待处理-->
+      <template is="wxParse" data='{{wxParseData:detail.nodes}}'></template>
+   </view>
+   <view>
+   <view class='bottombtn btn1' bindtap='consultt'>电话咨询</view>
+   <view class='bottombtn btn2' bindtap='consulto'>预约试驾</view>
+   </view>
+</view>
+

@@ -1,0 +1,122 @@
+/* pages/index/index.wxss */
+.toppic{
+  width: 100%;
+  height: 380rpx;
+  vertical-align:top;
+}
+.toptitle{
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  color: #353535;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.bothside{
+  margin-left: 20rpx;
+  margin-right: 30rpx;
+}
+
+.orderfont{
+  border: 1rpx solid #3080ee;
+  width: 180rpx;
+  height: 46rpx;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 46rpx;
+  color: #3080ee;
+}
+.searchinput{
+  margin-left: 20rpx;
+  height: 56rpx;
+  width: 700rpx;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 10rpx;
+  position:relative;
+  padding-left: 10rpx; 
+  font-size: 30rpx;
+  
+}
+.searchbtn{
+  display:inline-block;
+   height:56rpx; 
+   line-height: 56rpx;  
+  left: -10rpx;
+  z-index: 99;
+}
+.cartitle{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #353535;
+  padding: 0 0 0 0;
+}
+.catdescribute{
+  margin-top: 20rpx;
+  font-size: 22rpx;
+  color: #666666;
+}
+.carofficalprice{
+  font-size: 22rpx;
+  color: #666666;
+}
+.carprice{
+  font-size: 22rpx;
+  color: #ff0000;
+}
+.cardetail{
+  font-size: 24rpx;
+  color: #666666;
+}
+
+.search_no {
+  width: 210rpx;
+  height: 170rpx;
+}
+.ordernone {
+  font-size: 34rpx;
+  text-align: center;
+  padding-top: 100rpx;
+  padding-bottom: 59rpx;
+  color: #777;
+}
+
+.ordernoneview{
+  font-size: 34rpx;
+  text-align: center;
+  padding-top: 200rpx;
+  color: #777;
+}
+.search_view{
+  width: 210rpx;
+  height: 170rpx;
+}
+.fontsetting{
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 60rpx;
+  color: #888888;
+}
+
+.company-info{
+text-align: center;
+font-size:24rpx; 
+color:#999999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

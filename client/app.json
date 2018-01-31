@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/move/move",
+    "pages/addCgi/addCgi",
+    "pages/cardetail/cardetail",
+    "pages/search/search",
+    "pages/index/index",
+    "pages/customer2",
+    "pages/customer1/customer1",
+    "pages/customerpage/customer"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Wafer Quick Start",
+    "navigationBarTextStyle": "black"
+  }
+}
