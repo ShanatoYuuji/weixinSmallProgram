@@ -24,14 +24,16 @@ Page({
     })
 
     // this.animation = animation
-
-    animation.translate(10 + this.data.count * 10, -10 - this.data.count * 10).step()
+    if (this.data.count > 10) {
+      animation.translate(0, 0).step()
+    }else{
+      animation.translate(10 + this.data.count * 10, -10 - this.data.count * 10).step()
+    }
+   
    
     this.data.count = this.data.count+1;
     
-    if (this.data.count>10){
-      this.data.count = -1;
-    }
+  
 
     // animation.scale(2, 2).rotate(45).step()
 
